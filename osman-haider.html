@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Osman Haider</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body>
@@ -169,37 +169,7 @@
             </div>
         </div>
     </div>
-    <script>
-        var player;
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-                height: '540',
-                width: '960',
-                videoId: 'mUGYPlAgJPw',
-                events: {
-                    'onReady': onPlayerReady,
-                }
-            });
-            player.getIframe().style.display = 'none'; // Hide the video by default
-        }
 
-        function onPlayerReady(event) {
-            var playButton = document.getElementById("oh-play-button");
-            playButton.addEventListener("click", function() {
-                var videoContainer = document.querySelector(".oh-video-section-logo");
-                var videoContainer2 = document.querySelector(".oh-video-container-section-play");
-                videoContainer.style.display = 'none'; // Hide the video container
-                videoContainer2.style.display = 'none'; // Hide the video container
-                player.getIframe().style.display = 'block'; // Show the video
-                player.playVideo();
-            });
-        }
-
-        // This code loads the IFrame Player API code asynchronously.
-        var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    </script>
+    <script src="./src/js/script.js"></script>
 </body>
 </html>

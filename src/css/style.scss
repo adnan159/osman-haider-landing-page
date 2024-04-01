@@ -1,6 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Arvo/Arvo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Arvo/Arvo-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Lato/Lato-Bold.ttf') format('truetype');
+}
+
 .oh-main-container {
     width: 100%;
     margin: 0 auto;
@@ -9,6 +35,8 @@
         display: flex;
         gap: 50px;
         flex-shrink: 0;
+        padding-top: 15px;
+        padding-bottom: 40px;
         .heading-button {
             border-radius: 3px;
             font-family: Lato;
@@ -159,6 +187,7 @@
     .oh-flex-container {
         margin-top: 100px;
         margin-bottom: 80px;
+        padding: 40px 0;
 
         &-item {
             display: flex;
@@ -236,7 +265,7 @@
     }
 
     .oh-review-container {
-        padding: 80px 0px 40px 0px;
+        padding: 120px 0px 40px 0px;
         background-image: linear-gradient(#F8F8F8, #FFFFFF);
 
 
@@ -301,7 +330,7 @@
     }
 
     .oh-footer{
-        padding: 80px 0px;
+        padding: 90px 0px;
         font-family: Lato;
         width: 960px;
         margin: 0 auto;
@@ -346,23 +375,3 @@
         }
     }  
 }
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
